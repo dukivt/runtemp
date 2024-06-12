@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  recebecep:
+    container_name: recebe-cep
+    build:
+      context: ./recebecep
+      dockerfile: Dockerfile.cep
+    ports:
+      - "8080:8080"
+    networks:
+      - local-network
+
+  temperaturacep:
+    container_name: temp-cep
+    build:
+      context: ./temperaturacep
+      dockerfile: Dockerfile.temp
+    ports:
+      - "8082:8082"
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge
