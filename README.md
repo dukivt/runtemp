@@ -13,6 +13,7 @@ ou
 
 Acessar: 
 http://localhost:8082/?cep={cep}
+
 Ex: http://http://localhost:8082/?cep=24230136
 
 ## Acesso via hospedagem Google Cloud Run
