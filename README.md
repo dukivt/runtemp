@@ -16,6 +16,9 @@ http://localhost:8082/?cep={cep}
 
 Ex: http://http://localhost:8082/?cep=24230136
 
+## Instruções para execução dos testes:
+go test -v
+
 ## Acesso via hospedagem Google Cloud Run
 Acessar o endereço abaixo informando o cep que deseja consultar:
 
